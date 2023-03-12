@@ -1,7 +1,7 @@
 language: csharp
-os: linux
 dist: trusty
-mono: none
+mono:
+  - latest
 dotnet: 7.0.0
 script:
   - dotnet restore
