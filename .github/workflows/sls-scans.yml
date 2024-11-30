@@ -61,9 +61,9 @@ jobs:
           # The asset scan key found in the Asset Details page
           scanKey: ${{ SCANKEY }}
           # Azure Container Registry username
-          username: ${{ ARCUSERNAME }}
+          username: ${{ ACRUSERNAME }}
           # Azure Container Registry password
-          password: ${{ ARCPASSWORD }}
+          password: ${{ ACRPASSWORD }}
           # Indicates whether to run SCA or not
           runSCA: 'true'
           # Indicates whether to run SAST or not
