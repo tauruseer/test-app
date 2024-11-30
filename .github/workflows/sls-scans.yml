@@ -59,11 +59,11 @@ jobs:
         uses: tauruseer/sls-pipeline-scanner@v1.0.1
         with:
           # The asset scan key found in the Asset Details page
-          scanKey: ${{ secret.SCANKEY }}
+          scanKey: ${{ secrets.SCANKEY }}
           # Azure Container Registry username
-          username: ${{ secret.ACRUSERNAME }}
+          username: ${{ secrets.ACRUSERNAME }}
           # Azure Container Registry password
-          password: ${{ secret.ACRPASSWORD }}
+          password: ${{ secrets.ACRPASSWORD }}
           # Indicates whether to run SCA or not
           runSCA: 'true'
           # Indicates whether to run SAST or not
