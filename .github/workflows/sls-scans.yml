@@ -56,14 +56,14 @@ jobs:
       - name: SLS Pipeline Scanner
         # You may pin to the exact commit or the version.
         # uses: tauruseer/sls-pipeline-scanner@f81669695a5b840f8762bf755911932567ef5a58
-        uses: tauruseer/sls-pipeline-scanner@v1.0.2
+        uses: tauruseer/sls-pipeline-scanner@v1.0.4
         with:
           # The asset scan key found in the Asset Details page
-          scanKey: ${{ secrets.SCANKEY }}
+          scanKey: ${{ secrets.SLS_SCAN_KEY }}
           # Azure Container Registry username
-          username: ${{ secrets.ACRUSERNAME }}
+          username: ${{ secrets.SLS_CLIENT_ID }}
           # Azure Container Registry password
-          password: ${{ secrets.ACRPASSWORD }}
+          password: ${{ secrets.SLS_CLIENT_SECRET }}
           # Indicates whether to run SCA or not
           runSCA: 'true'
           # Indicates whether to run SAST or not
